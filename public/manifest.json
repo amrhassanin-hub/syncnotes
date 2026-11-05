@@ -1,0 +1,31 @@
+{
+  "id": "/",
+  "name": "SyncNotes - AI Collaborative Notes",
+  "short_name": "SyncNotes",
+  "description": "Collaborative note-taking web app where members have personal note tabs, teammates can view shared notes, and Gemini AI synthesizes notes into actionable summaries.",
+  "theme_color": "#4f46e5",
+  "background_color": "#f8fafc",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

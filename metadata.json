@@ -1,0 +1,6 @@
+{
+  "name": "SyncNotes",
+  "description": "Collaborative note-taking web app where members have personal note tabs, teammates can view shared notes, and Gemini AI synthesizes notes into actionable summaries and answers questions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

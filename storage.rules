@@ -1,0 +1,13 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Media files for groups (audio notes, photo notes)
+    match /groups/{groupId}/{allPaths=**} {
+      // Allow read/write for authenticated users
+      allow read: if request.auth != null;
+      allow write: if request.auth != null 
+        && request.resource.size < 25 * 1024 * 1024 // max 25MB per media
+        && (request.resource.contentType.matches('image/.*') || request.resource.contentType.matches('audio/.*'));
+    }
+  }
+}
